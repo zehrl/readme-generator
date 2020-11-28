@@ -13,9 +13,11 @@
     -email and instructions for reaching out
 [x] License (auto generated)
  -->
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+<!-- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) -->
  
- # Title of Project
+[![License](${response.badgeLink})](${response.licenseLink})
+
+ # ${title}
 
 ## Table of Contents (Optional)
 * [Description](#Description)
@@ -29,29 +31,29 @@
 
 ## Description
 
-(description text goes here)
+${response.description}
 
 ## Installation
 
-(installation text goes here)
+${response.installation}
 
 ## Usage
 
-(usage text goes here)
+${response.usage}
 
 ## Contributing
 
-(contributing text goes here)
+${response.contributing}
 
 ## Tests
 
-(test text goes here)
+${response.tests}
 
 ## Questions & Contact
 
-* My github: (link to github)
-* Email me at (zehrl315@outlook.com) if you have any questions.
+* My github: https://github.com/${response.github}
+* Email me at ${response.email} if you have any questions.
 
 ## License
 
-(license text goes here)
+${response.license}
