@@ -3,9 +3,14 @@ const { error } = require("console")
 const fs = require("fs")
 const inquirer = require('inquirer')
 
+// Introduction
+console.log(
+    `Please respond with information regarding each section of your Readme
+---------------------------------------------------------------------`
+    )
+
 // Prompt User
 inquirer.prompt([
-    /*
     // title of project
     {
         type: "input",
@@ -61,12 +66,9 @@ inquirer.prompt([
         message: "Email Address: ",
         name: "email",
     },
-    */
+    
 
-    // license (from a list!) https://choosealicense.com/licenses/
-    //GNU AGPLv3, GNU GPLv3, GNU LGPLv3, Mozilla Public License 2.0, 
-    //Apache License 2.0, MIT License, Boost Software License 1.0, 
-    //The Unlicense
+    // Licenses https://choosealicense.com/licenses/
     {
         type: "list",
         message: "License: ",
@@ -84,14 +86,14 @@ inquirer.prompt([
         name: "licenseOption",
     },
     
-    // Name of user
+    // Name of user (for license)
     {
         type: "input",
         message: "Your Full Name: ",
         name: "name",
     },
     
-    // Year
+    // Year (for license)
     {
         type: "input",
         message: "License Year: ",
@@ -100,8 +102,6 @@ inquirer.prompt([
 
 ])
     .then((response) => {
-        //CONSOLE LOGS
-        console.log(response.licenseOption)
 
         // Pull license based on input
         const license = findLicense(response.licenseOption, response.name, response.year)
@@ -118,7 +118,7 @@ inquirer.prompt([
 * [Usage](#Usage)
 * [Contributing](#Contributing)
 * [Tests](#Tests)
-* [Questions](#Questions?)
+* [Questions](#Questions)
 * [License](#License)
 
 
@@ -142,7 +142,7 @@ ${response.contributing}
 
 ${response.tests}
 
-## Questions & Contact
+## Questions
 
 * My github: https://github.com/${response.github}
 * Email me at ${response.email} if you have any questions.
@@ -152,8 +152,8 @@ ${response.tests}
 ${license.text}`
 
         // Write to README.md
-        fs.writeFile("READMEtest.md", readmeText, (error) => {
-            error ? console.log(error) : console.log("README.md successfully updated.")
+        fs.writeFile("generated-README.md", readmeText, (error) => {
+            error ? console.log(error) : console.log("README successfully updated.")
         })
 
 })

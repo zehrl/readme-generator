@@ -6,48 +6,37 @@
 ## Table of Contents (Optional)
 * [Description](#Description)
 * [Installation](#Installation)
-* [Instructions](#Instructions)
+* [Usage](#Usage)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
 * [Questions](#Questions)
 * [License](#License)
 
----
 
 ## Description
 
-The README Generator is a Node application (ran in the console) that generates a basic README file based on inputs from the user. The user will be prompted for each section of the README that is to be created. After responding to each prompt, a "Generated-README.md" will be generated in the main folder.
 
----
 
 ## Installation
 
-1. Clone the repository from github
-1. Make sure [Node.js](https://nodejs.org/en/) is installed on your computer
-1. Install all Node modules by typing `npm install` in the console
 
----
 
-## Instructions
+## Usage
 
-Follow the video [here](https://drive.google.com/file/d/1xE7odREr9i9f5u5E27q-AIn6oZTMhK7t/view) for a walkthrough!
 
-### Running the application
-1. Type `node index.js` in the console of your IDE
-2. Follow the prompts by entering the information you would like to display on your README (Title, Description, Installation etc.)
 
-![README successfully updated example](images/console-example.png)
+## Contributing
 
-3. Once "README successfully updated." is printed in the console, open the `generated-README.md` file in the main folder.
 
-![Generated README folder example](images/generated-readme-example.png)
 
----
+## Tests
+
+
 
 ## Questions
 
 * My github: https://github.com/zehrl
 * Email me at zehrl315@outlook.com if you have any questions.
-
----
 
 ## License
 
